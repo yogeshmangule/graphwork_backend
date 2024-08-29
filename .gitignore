@@ -1,0 +1,10 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Ignore zip files
+*.zip
+
+# Ignore specific zip directories
+/.zip
