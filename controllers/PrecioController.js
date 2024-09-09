@@ -131,6 +131,7 @@ export const searchPrecio = async (req, res) => {
       Obsrv_att_turist: precioItem.Obsrv_att_turist,
       marca_comercial: precioItem.encuesta ? precioItem.encuesta.marca_comercial : null,
       username: precioItem.usuario ? precioItem.usuario.username : null,
+      encuesta_id: precioItem.encuesta_id
     }));
 
     res.json(precioItemsConDatos);

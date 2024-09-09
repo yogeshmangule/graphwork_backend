@@ -97,7 +97,7 @@ export const searchServicio = async (req, res) => {
       createdAt: servicioItem.createdAt,
       updatedAt: servicioItem.updatedAt,
       marca_bebidas_premium: servicioItem?.marca_bebidas_premium ? 'Premium' : null,
-      marca_bebidas_standar: servicioItem?.marca_bebidas_standar? 'Marca Estándar' : null,
+      marca_bebidas_standar: servicioItem?.marca_bebidas_standar ? 'Marca Estándar' : null,
       marca_bebidas_blancas: servicioItem?.marca_bebidas_blancas ? 'Marcas Blancas' : null,
       marca_bebidas_otras: servicioItem?.marca_bebidas_otra,
       vajilla_tubo_extra: servicioItem?.vajilla_tubo_extra ? 'Vaso tubo extra' : null,
@@ -119,6 +119,7 @@ export const searchServicio = async (req, res) => {
       observ_servicio: servicioItem.observ_servicio,
       marca_comercial: servicioItem.encuesta ? servicioItem.encuesta.marca_comercial : null,
       username: servicioItem.usuario ? servicioItem.usuario.username : null,
+      encuesta_id: servicioItem.encuesta_id
     }));
 
     res.json(servicioItemsConDatos);
@@ -165,7 +166,7 @@ export const searchServicioId = async (req, res) => {
       createdAt: servicioItem.createdAt,
       updatedAt: servicioItem.updatedAt,
       marca_bebidas_premium: servicioItem?.marca_bebidas_premium ? 'Premium' : null,
-      marca_bebidas_standar: servicioItem?.marca_bebidas_standar? 'Marca Estándar' : null,
+      marca_bebidas_standar: servicioItem?.marca_bebidas_standar ? 'Marca Estándar' : null,
       marca_bebidas_blancas: servicioItem?.marca_bebidas_blancas ? 'Marcas Blancas' : null,
       marca_bebidas_otras: servicioItem?.marca_bebidas_otra,
       vajilla_tubo_extra: servicioItem?.vajilla_tubo_extra ? 'Vaso tubo extra' : null,

@@ -107,6 +107,7 @@ export const searchEntorno = async (req, res) => {
       observ_entorno: entornoItem.observ_entorno,
       marca_comercial: entornoItem.encuesta ? entornoItem.encuesta.marca_comercial : null,
       username: entornoItem.usuario ? entornoItem.usuario.username : null,
+      encuesta_id: entornoItem.encuesta_id
     }));
 
     res.json(entornoItemsConDatos);

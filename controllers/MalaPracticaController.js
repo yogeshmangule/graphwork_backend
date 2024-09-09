@@ -108,6 +108,7 @@ export const searchMalaPractica = async (req, res) => {
       observ_incid: malaPracticaItem.observ_incid,
       marca_comercial: malaPracticaItem.encuesta ? malaPracticaItem.encuesta.marca_comercial : null,
       username: malaPracticaItem.usuario ? malaPracticaItem.usuario.username : null,
+      encuesta_id: malaPracticaItem.encuesta_id
     }));
 
     res.json(malaPracticaItemsConDatos);

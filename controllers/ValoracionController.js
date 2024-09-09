@@ -109,6 +109,7 @@ export const searchValoracion = async (req, res) => {
       archivo: valoracionItem.archivo,
       marca_comercial: valoracionItem.encuesta ? valoracionItem.encuesta.marca_comercial : null,
       username: valoracionItem.usuario ? valoracionItem.usuario.username : null,
+      encuesta_id: valoracionItem.encuesta_id
     }));
 
     res.json(valoracionItemsConDatos);

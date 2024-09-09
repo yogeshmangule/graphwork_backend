@@ -117,6 +117,7 @@ export const searchEncuestas = async (req, res) => {
       createdAt: encuesta.createdAt,
       updatedAt: encuesta.updatedAt,
       user_id: encuesta.user_id,
+      Id_estab: encuesta.Id_estab,
       usuario: {
         username: encuesta.usuario ? encuesta.usuario.username : null,
       },

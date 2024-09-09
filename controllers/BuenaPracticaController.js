@@ -106,6 +106,7 @@ export const searchBuenaPractica = async (req, res) => {
       observ_buenas: buenaPracticaItem.observ_buenas,
       marca_comercial: buenaPracticaItem.encuesta ? buenaPracticaItem.encuesta.marca_comercial : null,
       username: buenaPracticaItem.usuario ? buenaPracticaItem.usuario.username : null,
+      encuesta_id: buenaPracticaItem.encuesta_id
     }));
 
     res.json(buenaPracticaItemsConDatos);
